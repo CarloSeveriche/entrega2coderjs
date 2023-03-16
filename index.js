@@ -11,10 +11,6 @@ class Usuario{
         this.edad = edad;
     }
 
-    cambiarNombre(){
-        nuevoNombre = prompt(`Ingresa tu nuevo nombre: `);
-        this.nombre = nuevoNombre;
-    }
 }
 
 const USUARIOS = [];
