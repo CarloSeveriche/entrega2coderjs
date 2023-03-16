@@ -17,12 +17,14 @@ class Usuario{
     }
 }
 
+const USUARIOS = [];
+
 
 function crearUsuario(){
 
     let cantidadRegistros = parseInt(prompt(`¿Cuántas personas deseas registar?`))
 
-    const USUARIOS = [];
+    
 
     if(cantidadRegistros == 0){
         alert(`Ingrese una cantidad minima de 1`)
@@ -48,4 +50,18 @@ function crearUsuario(){
 
     }
 }
+
+function encontrar(){
+
+    let identificacionAEncontrar = parseInt(prompt(`Numero de identficación de la persona a encontrar: `))
+
+    let encontrarPorID = USUARIOS.find( numero =>  numero.identificacion == identificacionAEncontrar);
+
+    console.log(`el usuario que buscabas es ${encontrarPorID.nombre} ${encontrarPorID.apellido}`);
+
+}
+
+
 crearUsuario();
+encontrar()
+
