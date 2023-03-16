@@ -57,7 +57,17 @@ function encontrar(){
 
 }
 
+function filtrar(){
+
+    let filtrarNombre = prompt(`Filtra por nombre: `);
+
+    let nombreFiltrado = USUARIOS.filter( nombre => nombre.nombre == filtrarNombre) ;
+
+    console.log(nombreFiltrado);
+}
+
 
 crearUsuario();
 encontrar()
+filtrar()
 
